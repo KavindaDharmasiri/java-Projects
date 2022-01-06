@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="259.0" prefWidth="524.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AboutHospitalFormController">
+   <children>
+      <Text fill="#5a1964" layoutX="253.0" layoutY="251.0" strokeType="OUTSIDE" strokeWidth="0.0" text="WELCOME TO ALPHA HEALTH CARE HOSPITAL">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="295.0" layoutY="82.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../sample/Images/LOGO-PNG-LARGE-e1555333985435.png" />
+         </image>
+      </ImageView>
+      <Text fill="#4a1775" layoutX="35.0" layoutY="95.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Best Service Ever.">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

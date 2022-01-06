@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.17.0.final using JasperReports Library version 6.17.0-6d93193241dd8cc42629e188b94f9e0bc5722efd  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="FinalReportMoney" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="2ee301cd-08a6-4456-8ba3-8a87254d62ba">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="jdbccon"/>
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<queryString>
+		<![CDATA[SELECT * FROM finalreport]]>
+	</queryString>
+	<field name="dailyIncome" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="dailyIncome"/>
+		<property name="com.jaspersoft.studio.field.label" value="dailyIncome"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="finalreport"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="monthlyIncome" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="monthlyIncome"/>
+		<property name="com.jaspersoft.studio.field.label" value="monthlyIncome"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="finalreport"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="yearlyIncome" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="yearlyIncome"/>
+		<property name="com.jaspersoft.studio.field.label" value="yearlyIncome"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="finalreport"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="111" splitType="Stretch">
+			<staticText>
+				<reportElement mode="Opaque" x="0" y="-3" width="555" height="58" forecolor="rgba(255, 255, 255, 0.91764706)" backcolor="#547FC4" uuid="e4caa4f5-17a7-4ca9-8ab8-10f2895239f8"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="22" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ALPHA HEALTH CARE HOSPITAL]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="55" width="555" height="30" forecolor="rgba(105, 85, 85, 0.67058825)" uuid="6e91e066-2a55-4ddc-a12d-e16d76c87e0a"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font size="13" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Final Payment Report]]></text>
+			</staticText>
+			<textField pattern="MMMMM dd, yyyy">
+				<reportElement x="193" y="80" width="100" height="30" forecolor="rgba(105, 85, 85, 0.67058825)" uuid="45d4002a-d212-4dfe-923b-a32fe654ac45"/>
+				<textElement textAlignment="Right">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<textField pattern="HH:mm">
+				<reportElement x="301" y="80" width="100" height="30" forecolor="rgba(105, 85, 85, 0.67058825)" uuid="ed8767ff-6788-497e-b016-94cdcaa0c079">
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<columnHeader>
+		<band height="316" splitType="Stretch">
+			<staticText>
+				<reportElement x="240" y="78" width="137" height="30" uuid="4de1b7c6-880f-4092-b364-0f718bdb8f5f"/>
+				<textElement>
+					<font size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Today Income    :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="240" y="120" width="137" height="30" uuid="530d8610-3c29-4b48-a62e-3a7ee8651e81"/>
+				<textElement>
+					<font size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Monthly Income :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="240" y="160" width="137" height="30" uuid="66deeea0-1713-41ab-988e-f00047c79b89"/>
+				<textElement>
+					<font size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Yearly Income    :]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="387" y="78" width="168" height="30" forecolor="#EB2926" uuid="63aed117-2331-4807-a813-c765b822a762"/>
+				<textElement>
+					<font size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{dailyIncome}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="387" y="120" width="168" height="30" forecolor="#EB2926" uuid="3a566789-3957-47df-8f18-ab33f576dd43"/>
+				<textElement>
+					<font size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{monthlyIncome}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="387" y="160" width="168" height="30" forecolor="#EB2926" uuid="57c98c17-0b3b-478d-95bf-60082f2ebc34"/>
+				<textElement>
+					<font size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{yearlyIncome}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="250" width="555" height="66" forecolor="#3A13E8" uuid="94d9bccb-ceb1-48e0-a221-98ef602685f9"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ALPHA HEALTH CARE HOSPITAL...
+GOOD DAY SIR..!]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="10" y="9" width="210" height="241" forecolor="rgba(255, 255, 255, 0.91764706)" backcolor="#5C6778" uuid="0d011aef-4f28-438c-8af8-a580485cea5c"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="22" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Good Service         Ever..
+
+]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+</jasperReport>

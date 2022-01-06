@@ -1,0 +1,581 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.17.0.final using JasperReports Library version 6.17.0-6d93193241dd8cc42629e188b94f9e0bc5722efd  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="PatientFinal" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="d9c0c5b0-a33c-4281-bb1c-7df8cf21f494">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="jdbccon"/>
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<queryString>
+		<![CDATA[SELECT * FROM patientfinal]]>
+	</queryString>
+	<field name="ApointmentId" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="ApointmentId"/>
+		<property name="com.jaspersoft.studio.field.label" value="ApointmentId"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="patientfinal"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="patId" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="patId"/>
+		<property name="com.jaspersoft.studio.field.label" value="patId"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="patientfinal"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="patName" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="patName"/>
+		<property name="com.jaspersoft.studio.field.label" value="patName"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="patientfinal"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="patAddress" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="patAddress"/>
+		<property name="com.jaspersoft.studio.field.label" value="patAddress"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="patientfinal"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="patAge" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="patAge"/>
+		<property name="com.jaspersoft.studio.field.label" value="patAge"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="patientfinal"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="nic" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="nic"/>
+		<property name="com.jaspersoft.studio.field.label" value="nic"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="patientfinal"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="contact" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="contact"/>
+		<property name="com.jaspersoft.studio.field.label" value="contact"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="patientfinal"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="docName" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="docName"/>
+		<property name="com.jaspersoft.studio.field.label" value="docName"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="patientfinal"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="nurseName" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="nurseName"/>
+		<property name="com.jaspersoft.studio.field.label" value="nurseName"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="patientfinal"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="roomType" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="roomType"/>
+		<property name="com.jaspersoft.studio.field.label" value="roomType"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="patientfinal"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="roomPrice" class="java.math.BigDecimal">
+		<property name="com.jaspersoft.studio.field.name" value="roomPrice"/>
+		<property name="com.jaspersoft.studio.field.label" value="roomPrice"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="patientfinal"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="labType" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="labType"/>
+		<property name="com.jaspersoft.studio.field.label" value="labType"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="patientfinal"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="eqName" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="eqName"/>
+		<property name="com.jaspersoft.studio.field.label" value="eqName"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="patientfinal"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="eqPrice" class="java.math.BigDecimal">
+		<property name="com.jaspersoft.studio.field.name" value="eqPrice"/>
+		<property name="com.jaspersoft.studio.field.label" value="eqPrice"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="patientfinal"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="drinkName" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="drinkName"/>
+		<property name="com.jaspersoft.studio.field.label" value="drinkName"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="patientfinal"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="drinkPrice" class="java.math.BigDecimal">
+		<property name="com.jaspersoft.studio.field.name" value="drinkPrice"/>
+		<property name="com.jaspersoft.studio.field.label" value="drinkPrice"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="patientfinal"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="clothName" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="clothName"/>
+		<property name="com.jaspersoft.studio.field.label" value="clothName"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="patientfinal"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="clothPrice" class="java.math.BigDecimal">
+		<property name="com.jaspersoft.studio.field.name" value="clothPrice"/>
+		<property name="com.jaspersoft.studio.field.label" value="clothPrice"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="patientfinal"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="mediName" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="mediName"/>
+		<property name="com.jaspersoft.studio.field.label" value="mediName"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="patientfinal"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="mediPrice" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="mediPrice"/>
+		<property name="com.jaspersoft.studio.field.label" value="mediPrice"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="patientfinal"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="date" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="date"/>
+		<property name="com.jaspersoft.studio.field.label" value="date"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="patientfinal"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="time" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="time"/>
+		<property name="com.jaspersoft.studio.field.label" value="time"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="patientfinal"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="fullTotal" class="java.math.BigDecimal">
+		<property name="com.jaspersoft.studio.field.name" value="fullTotal"/>
+		<property name="com.jaspersoft.studio.field.label" value="fullTotal"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="patientfinal"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="105" splitType="Stretch">
+			<staticText>
+				<reportElement mode="Opaque" x="0" y="-3" width="555" height="53" forecolor="rgba(250, 250, 252, 0.91764706)" backcolor="#547FC4" uuid="e3f928f8-be62-4842-93f1-dd78f9264f33"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="22" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ALPHA HEALTH CARE HOSPITAL]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="50" width="555" height="30" forecolor="rgba(105, 85, 85, 0.67058825)" backcolor="#547FC4" uuid="bed729a7-241c-4bf7-9611-87a5252d1e5b"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font size="13" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Patient Final Details & Payment Info.]]></text>
+			</staticText>
+			<textField pattern="MMMMM dd, yyyy">
+				<reportElement x="193" y="75" width="100" height="30" forecolor="rgba(105, 85, 85, 0.67058825)" backcolor="#547FC4" uuid="45536916-c23c-434b-9cd6-a1919c84a010"/>
+				<textElement textAlignment="Right">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<textField pattern="HH:mm">
+				<reportElement x="301" y="75" width="100" height="30" forecolor="rgba(105, 85, 85, 0.67058825)" backcolor="#547FC4" uuid="fb924c5f-7b14-435c-b824-7aa21b3062f7">
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="596" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="39" width="70" height="21" forecolor="#6D79BF" uuid="3c064f58-ede0-4472-97e4-4ba7bbee2047"/>
+				<textElement textAlignment="Left"/>
+				<text><![CDATA[Apointment Id : ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="60" width="70" height="21" forecolor="#6D79BF" uuid="c1193ab5-d4c6-4ea1-b118-a92d6e18b66d"/>
+				<textElement textAlignment="Left"/>
+				<text><![CDATA[Patient Id       :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="80" width="70" height="21" forecolor="#6D79BF" uuid="9f67c14a-93c9-4cc2-a169-73b6b5c3e54a"/>
+				<textElement textAlignment="Left"/>
+				<text><![CDATA[Patient Name :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="380" y="60" width="90" height="21" forecolor="#6D79BF" uuid="1919f24a-677b-45bb-b99f-7d3756ff7495"/>
+				<textElement textAlignment="Left"/>
+				<text><![CDATA[Apointment Date : ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="380" y="80" width="90" height="21" forecolor="#6D79BF" uuid="3b0bb049-03de-432f-9670-23696732022a"/>
+				<textElement textAlignment="Left"/>
+				<text><![CDATA[Apointment Time : ]]></text>
+			</staticText>
+			<line direction="BottomUp">
+				<reportElement x="0" y="110" width="555" height="1" uuid="869d5414-db5b-4157-a320-db6f0fdc9426"/>
+				<graphicElement>
+					<pen lineWidth="3.0" lineStyle="Double" lineColor="#DBD7D7"/>
+				</graphicElement>
+			</line>
+			<staticText>
+				<reportElement x="0" y="140" width="320" height="22" uuid="cf6dc43e-87c8-40c6-afeb-0d5e44ca1c6c"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Apointment Detail ,]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="300" y="170" width="80" height="22" forecolor="#6D79BF" uuid="b383f73d-1db2-4067-a99d-284a222047f8"/>
+				<text><![CDATA[Patient Contatct :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="80" y="170" width="90" height="21" forecolor="#6D79BF" uuid="57108281-ba83-4339-94b2-ae4960a3b10f"/>
+				<textElement textAlignment="Left"/>
+				<text><![CDATA[Patient Name    :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="80" y="192" width="90" height="22" forecolor="#6D79BF" uuid="a6fd71e1-13b8-4405-947e-d7f4bc98114f"/>
+				<text><![CDATA[Patient Address :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="80" y="210" width="90" height="22" forecolor="#6D79BF" uuid="428304e3-7dec-44c5-a4da-7cfa1bc02c07"/>
+				<text><![CDATA[Patient Age       :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="80" y="230" width="90" height="22" forecolor="#6D79BF" uuid="2cf42a95-7d4a-42c6-bae7-b82659b28320"/>
+				<text><![CDATA[Patient Nic       :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="300" y="192" width="80" height="22" forecolor="#6D79BF" uuid="6cc795b6-ae42-4fbe-a44b-1acce500c4ef"/>
+				<text><![CDATA[Doctor Name    :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="300" y="210" width="80" height="22" forecolor="#6D79BF" uuid="8b444b5b-3464-4269-b999-46d5bf687369"/>
+				<text><![CDATA[Nurse Name     :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="270" width="320" height="22" uuid="4a87627b-399f-4a48-878c-7d5e593d14de"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Payment Detail ,]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="140" y="310" width="100" height="22" forecolor="#7386BA" uuid="140c86e1-0e31-4350-8823-65301bc890bb"/>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Type/Name]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="240" y="310" width="100" height="22" forecolor="#7386BA" uuid="98c1bd03-47a4-4976-851c-58682bc3b71e"/>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Price]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="60" y="310" width="80" height="22" forecolor="#7386BA" uuid="d37ec375-0ad6-4dd4-836a-598fe09d62f2"/>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Use Items]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="60" y="332" width="80" height="30" uuid="e9163a73-2b72-467e-b77b-372030e9a946"/>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[Room]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="60" y="362" width="80" height="28" uuid="5f57a79f-72cc-4a74-935e-a8d436d1fd91"/>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[Lab]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="60" y="390" width="80" height="30" uuid="053c78b4-039b-4a0f-bf26-00f1279c4d6f"/>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[Equpment]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="60" y="420" width="80" height="28" uuid="2fd389bc-f3ee-4bbf-a339-1576a43a851a"/>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[Drink]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="60" y="448" width="80" height="29" uuid="9c5ea4e0-5128-4114-bff0-e29ddae30e35"/>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[Cloth]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="60" y="477" width="80" height="30" uuid="7831c800-21c3-4c09-89d1-7e56b4dcf489"/>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[Medicine]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="380" y="336" width="175" height="22" forecolor="#7386BA" uuid="a4a927cf-fc9e-46ca-860d-930b34843342"/>
+				<box>
+					<pen lineColor="#871610"/>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#851413"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#851413"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#851413"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#851413"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Full Price]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="80" y="40" width="100" height="20" uuid="30aba83c-df96-487f-ade1-61d08b6740c9"/>
+				<textFieldExpression><![CDATA[$F{ApointmentId}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="80" y="60" width="100" height="20" uuid="13026f24-ecd6-43e4-8217-931147d87be0"/>
+				<textFieldExpression><![CDATA[$F{patId}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="80" y="80" width="100" height="21" uuid="0163fb1d-c73d-4c94-a3e8-c5cc8488dfa5"/>
+				<textFieldExpression><![CDATA[$F{patName}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="470" y="60" width="85" height="21" uuid="fee4acd5-da68-49ac-974c-a8d48c383e79"/>
+				<textFieldExpression><![CDATA[$F{date}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="470" y="80" width="85" height="21" uuid="e3600767-b413-4d16-b090-ae1c73c65201"/>
+				<textFieldExpression><![CDATA[$F{time}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="180" y="170" width="81" height="22" uuid="7ee1ead1-91e3-4c27-9806-19b1155fdbb7"/>
+				<textFieldExpression><![CDATA[$F{patName}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="180" y="192" width="79" height="18" uuid="4ee9ae75-7de4-48cc-a9f2-fce4dcd65c7b"/>
+				<textFieldExpression><![CDATA[$F{patAddress}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="180" y="210" width="79" height="20" uuid="a3f606f5-9beb-4116-8bbf-2f9dacf20b24"/>
+				<textFieldExpression><![CDATA[$F{patAge}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="181" y="232" width="79" height="20" uuid="e1154b18-1425-43b3-b4a4-d6919f442183"/>
+				<textFieldExpression><![CDATA[$F{nic}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="390" y="170" width="79" height="21" uuid="afe4cd12-184c-4e5d-b70b-30d951de19ac"/>
+				<textFieldExpression><![CDATA[$F{contact}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="391" y="191" width="79" height="19" uuid="e97dfb99-f35e-4518-8db4-f2631de3d131"/>
+				<textFieldExpression><![CDATA[$F{docName}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="391" y="210" width="79" height="20" uuid="ea70008a-5e9c-4535-b3ef-d90b32004541"/>
+				<textFieldExpression><![CDATA[$F{nurseName}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="140" y="332" width="100" height="30" uuid="e7f1123a-0251-4385-9ffe-d4c4f4c709e2"/>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{roomType}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="240" y="332" width="100" height="30" forecolor="#E6312E" uuid="edac6e96-467b-47a8-b688-d8397dd92fdf"/>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{roomPrice}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="140" y="362" width="100" height="28" uuid="2c72a3a9-f1d9-404e-bbdb-71fa4a54727e"/>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{labType}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="140" y="390" width="100" height="30" uuid="33437071-d837-47c4-86a9-b945b7f89628"/>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{eqName}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="240" y="390" width="100" height="30" forecolor="#E6312E" uuid="4f21ed27-809b-4bef-a3af-526985cc1198"/>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{eqPrice}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="140" y="420" width="100" height="28" uuid="6ec2c3e1-7ecf-4598-9a23-394f62a96b56"/>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{drinkName}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="240" y="420" width="100" height="28" forecolor="#E6312E" uuid="d4724129-3627-40a0-a103-2fcbe20232c7"/>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{drinkPrice}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="140" y="448" width="100" height="29" uuid="a590ad38-266d-4764-9e06-80ea344c4c8f"/>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{clothName}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="240" y="448" width="100" height="29" forecolor="#E6312E" uuid="7cd20fea-3b93-4211-8cb5-33d4f0521135"/>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{clothPrice}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="140" y="477" width="100" height="30" uuid="7fd295f2-2950-4c3e-9c93-2e6e0e248b9a"/>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{mediName}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="240" y="477" width="100" height="30" forecolor="#E6312E" uuid="7234f086-fd4e-4a01-b517-0bebc80a330f"/>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{mediPrice}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="380" y="360" width="175" height="30" forecolor="#802C29" uuid="8e4b28d9-4dd8-40f9-8c34-7548a8153e1a"/>
+				<box>
+					<pen lineColor="#871610"/>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{fullTotal}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="240" y="362" width="100" height="28" forecolor="#E6312E" uuid="8dc66ed7-22dd-4c25-a078-ef89b38f82be"/>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[Free Of Charge]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="530" width="555" height="66" forecolor="#3A13E8" uuid="83aec52b-467b-4e6c-a638-5be200149fd4"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Thank You For Contact Us.
+Come Again...]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+</jasperReport>

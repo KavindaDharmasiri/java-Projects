@@ -1,0 +1,21 @@
+<component name="ArtifactManager">
+  <artifact type="javafx" name="AlphaHelthCareHospitalf">
+    <output-path>$PROJECT_DIR$/out/artifacts/AlphaHelthCareHospitalf</output-path>
+    <properties id="javafx-properties">
+      <options>
+        <option name="appClass" value="AppInitializer" />
+        <option name="description" value="" />
+        <option name="htmlPlaceholderId" value="" />
+        <option name="title" value="" />
+        <option name="vendor" value="" />
+        <option name="version" value="" />
+      </options>
+    </properties>
+    <root id="root">
+      <element id="archive" name="AlphaHelthCareHospital.jar">
+        <element id="module-output" name="AlphaHelthCareHospital" />
+      </element>
+      <element id="library" level="project" name="bcprov-jdk15on-1.64" />
+    </root>
+  </artifact>
+</component>

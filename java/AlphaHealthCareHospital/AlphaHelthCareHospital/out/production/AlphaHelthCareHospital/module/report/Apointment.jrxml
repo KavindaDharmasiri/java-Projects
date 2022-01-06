@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.17.0.final using JasperReports Library version 6.17.0-6d93193241dd8cc42629e188b94f9e0bc5722efd  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Apointment" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="ae8b3191-cacd-4729-b131-93e624153805">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="jdbccon"/>
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<queryString>
+		<![CDATA[select * from ApointmentDetailForReport]]>
+	</queryString>
+	<field name="ApoinmentId" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="ApoinmentId"/>
+		<property name="com.jaspersoft.studio.field.label" value="ApoinmentId"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="apointmentdetailforreport"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="patientName" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="patientName"/>
+		<property name="com.jaspersoft.studio.field.label" value="patientName"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="apointmentdetailforreport"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="doctorName" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="doctorName"/>
+		<property name="com.jaspersoft.studio.field.label" value="doctorName"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="apointmentdetailforreport"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="nurseName" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="nurseName"/>
+		<property name="com.jaspersoft.studio.field.label" value="nurseName"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="apointmentdetailforreport"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="time" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="time"/>
+		<property name="com.jaspersoft.studio.field.label" value="time"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="apointmentdetailforreport"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="date" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="date"/>
+		<property name="com.jaspersoft.studio.field.label" value="date"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="apointmentdetailforreport"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="110" splitType="Stretch">
+			<staticText>
+				<reportElement mode="Opaque" x="0" y="-3" width="555" height="58" forecolor="rgba(255, 255, 255, 0.91764706)" backcolor="#547FC4" uuid="8ab63fde-4240-43bd-8346-498cc56f5dd7"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="22" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ALPHA HEALTH CARE HOSPITAL]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="55" width="555" height="30" forecolor="rgba(105, 85, 85, 0.67058825)" uuid="9eafd719-c8f1-474d-bf27-ab722356200f"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font size="13" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Apointment Details.]]></text>
+			</staticText>
+			<textField pattern="HH:mm">
+				<reportElement x="301" y="80" width="100" height="30" forecolor="rgba(105, 85, 85, 0.67058825)" uuid="03834b85-dd7b-4ee4-8b2e-b8575f50669e">
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<textField pattern="MMMMM dd, yyyy">
+				<reportElement x="193" y="80" width="100" height="30" forecolor="rgba(105, 85, 85, 0.67058825)" uuid="3ab9b243-2700-4bab-b52d-750b7fa0d15c"/>
+				<textElement textAlignment="Right">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="217" splitType="Stretch">
+			<staticText>
+				<reportElement mode="Opaque" x="0" y="0" width="95" height="30" forecolor="#702221" backcolor="#A3E6D8" uuid="effde544-a8c2-4827-83fa-c52e5fc814e8">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="1111bef2-f338-4c1a-bef2-fc097319d019"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[ApoinmentId]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="95" y="0" width="92" height="30" forecolor="#702221" backcolor="#A3E6D8" uuid="cc88426c-0281-4656-8020-ddef77263e85">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="4e3a765c-07fb-413d-8e22-9d3d1f0f988f"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[patientName]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="187" y="0" width="92" height="30" forecolor="#702221" backcolor="#A3E6D8" uuid="9b6fa831-6bb1-4c7c-b9fd-56b3d6667d57">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="71c6353f-02cd-4621-948d-bb6abc9222eb"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[doctorName]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="279" y="0" width="92" height="30" forecolor="#702221" backcolor="#A3E6D8" uuid="d15c08dd-f186-4e82-85f5-d06c868a1b58">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="844bee25-2f3f-4cf9-84e9-383034a5e9c3"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[nurseName]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="371" y="0" width="92" height="30" forecolor="#702221" backcolor="#A3E6D8" uuid="a1ef6bc2-2fcc-43ee-bc6f-37bd6c26380d">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="a70f7e64-0c2f-4f00-8ccf-1a5300cc5be0"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[time]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="463" y="0" width="92" height="30" forecolor="#702221" backcolor="#A3E6D8" uuid="159a90c7-b363-4a46-b2bd-d710b7686912">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="8a73ed77-9fa4-453d-b001-3c4530e8ad2d"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[date]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="0" y="30" width="95" height="30" uuid="2062cf07-a9a1-42f8-86b3-6a62c57c5f10">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="1111bef2-f338-4c1a-bef2-fc097319d019"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{ApoinmentId}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="95" y="30" width="92" height="30" uuid="4c78777e-2179-4967-9bcf-e3d78b2c3551">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="4e3a765c-07fb-413d-8e22-9d3d1f0f988f"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{patientName}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="187" y="30" width="92" height="30" uuid="3d42afd4-3431-4d20-84c3-785482f05c60">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="71c6353f-02cd-4621-948d-bb6abc9222eb"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{doctorName}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="279" y="30" width="92" height="30" uuid="560672fe-8308-4a8e-8d07-02e8f2dd80ac">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="844bee25-2f3f-4cf9-84e9-383034a5e9c3"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{nurseName}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="371" y="30" width="92" height="30" uuid="97787c53-99c2-446a-b8df-49b4ee2766d5">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="a70f7e64-0c2f-4f00-8ccf-1a5300cc5be0"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{time}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="463" y="30" width="92" height="30" uuid="d5625e84-0140-4c87-b333-1b79aaaa97fb">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="8a73ed77-9fa4-453d-b001-3c4530e8ad2d"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{date}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="97" width="555" height="66" forecolor="#3A13E8" uuid="f0da7b67-d049-4405-8afc-ed2537a967fe"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ALPHA HEALTH CARE HOSPITAL...
+GOOD DAY SIR..!]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+</jasperReport>

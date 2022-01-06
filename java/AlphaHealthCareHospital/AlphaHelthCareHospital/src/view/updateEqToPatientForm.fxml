@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="patDrink" prefHeight="415.0" prefWidth="444.0" style="-fx-background-color: white;" stylesheets="@../sample/css/TableView.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.UpdateEqToPatientFormController">
+    <children>
+        <Label layoutX="21.0" layoutY="57.0" prefHeight="21.0" prefWidth="87.0" text="Patient Id :">
+            <font>
+                <Font name="System Bold" size="15.0" />
+            </font>
+        </Label>
+        <Label fx:id="lblPatId" layoutX="108.0" layoutY="57.0" prefHeight="21.0" prefWidth="76.0">
+            <font>
+                <Font name="System Bold" size="15.0" />
+            </font>
+        </Label>
+        <TextField fx:id="txtName" disable="true" layoutX="15.0" layoutY="96.0" prefHeight="25.0" prefWidth="142.0" promptText="id">
+         <cursor>
+            <Cursor fx:constant="DISAPPEAR" />
+         </cursor></TextField>
+        <Separator layoutX="302.0" layoutY="96.0" orientation="VERTICAL" prefHeight="25.0" prefWidth="5.0" />
+        <Separator layoutX="21.0" layoutY="179.0" prefHeight="3.0" prefWidth="408.0" />
+        <TableView fx:id="tblCart" layoutX="21.0" layoutY="189.0" prefHeight="176.0" prefWidth="408.0">
+            <columns>
+                <TableColumn fx:id="colId" prefWidth="91.0" style="-fx-alignment: center;" text="Eq Id" />
+                <TableColumn fx:id="colQTY" prefWidth="84.0" style="-fx-alignment: center;" text="QTY" />
+                <TableColumn fx:id="colTotal" prefWidth="104.0" style="-fx-alignment: center;" text="price" />
+                <TableColumn fx:id="colDelete" prefWidth="128.0" style="-fx-alignment: center;" text="Edit" />
+            </columns>
+        </TableView>
+        <TextField fx:id="txtQty1" disable="true" layoutX="172.0" layoutY="96.0" prefHeight="25.0" prefWidth="120.0" promptText="QTY">
+         <cursor>
+            <Cursor fx:constant="DISAPPEAR" />
+         </cursor></TextField>
+      <Button fx:id="addCart" layoutX="332.0" layoutY="134.0" mnemonicParsing="false" onAction="#addToCartOnAction" style="-fx-background-color: #2C2C2B;" text="Add to cart" textFill="#f5f2f2">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="25.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../sample/Images/cart-36-256.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="place" layoutX="348.0" layoutY="374.0" mnemonicParsing="false" onAction="#placeOrderOnAction" prefHeight="33.0" prefWidth="95.0" style="-fx-background-color: #27db4a;" text="Place " textFill="#fffefe">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="25.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../sample/Images/icons8-ok-301.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="backBtn" layoutX="242.0" layoutY="374.0" mnemonicParsing="false" onAction="#BackOrderOnAction" prefHeight="33.0" prefWidth="95.0" style="-fx-background-color: #FD1C03;" text="Back" textFill="#fcf9f9">
+         <graphic>
+            <ImageView fitHeight="25.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../sample/Images/arrow-81-256.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <AnchorPane layoutX="323.0" layoutY="78.0" prefHeight="42.0" prefWidth="120.0" style="-fx-background-color: white; -fx-border-color: rgba(76, 73, 73, 0.83); -fx-border-radius: 8px;" styleClass="textPane">
+         <children>
+            <TextField fx:id="txtNewQty" layoutX="19.0" layoutY="11.0" onKeyReleased="#Qty" prefHeight="28.0" prefWidth="95.0" style="-fx-background-color: white; -fx-prompt-text-fill: #726d6d;">
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor>
+            </TextField>
+            <Label layoutX="14.0" layoutY="-8.0" style="-fx-background-color: white;" text="Qty" textFill="#27db4a">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="-2.0" layoutY="14.0" prefHeight="42.0" prefWidth="454.0" style="-fx-background-color: #27db4a; -fx-background-radius: 0;">
+         <children>
+            <Text fill="#fcf8f8" layoutX="154.0" layoutY="28.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Update Equipment Form" wrappingWidth="221.0419921875" AnchorPane.leftAnchor="154.0" AnchorPane.topAnchor="12.0">
+               <font>
+                  <Font name="Bookman Old Style Bold" size="17.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="25.0" fitWidth="28.0" layoutX="111.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="111.0" AnchorPane.topAnchor="9.0">
+               <image>
+                  <Image url="@../sample/Images/stethoscope.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="37.0" fitWidth="65.0" layoutX="387.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../sample/Images/LOGO-PNG-LARGE-e1555333985435.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+    </children>
+</AnchorPane>

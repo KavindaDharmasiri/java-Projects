@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXProgressBar?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="225.0" prefWidth="581.0" style="-fx-background-radius: 20; -fx-border-radius: 20;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="OpenInitializeWindowController">
+   <children>
+      <VBox prefHeight="225.0" prefWidth="585.0" style="-fx-background-radius: 20; -fx-border-radius: 20; -fx-background-color: black;" />
+      <JFXProgressBar layoutX="16.0" layoutY="190.0" prefHeight="10.0" prefWidth="554.0" />
+      <Label fx:id="lblLoading" layoutX="16.0" layoutY="174.0" prefHeight="17.0" prefWidth="554.0" text="loading..." />
+      <Label layoutX="28.0" layoutY="74.0" text="Alpha HealthCare Hospital" textFill="WHITE">
+         <font>
+            <Font name="Corbel Light Italic" size="30.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="189.0" fitWidth="153.0" layoutX="399.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../sample/Images/IMG_20210926_131521.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

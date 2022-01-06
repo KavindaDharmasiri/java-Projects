@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="apoinmentDetailDashBoard" prefHeight="334.0" prefWidth="524.0" stylesheets="@../sample/css/TableView.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ApoinmentDetailFormController">
+    <children>
+        <AnchorPane layoutX="10.0" layoutY="14.0" prefHeight="37.0" prefWidth="505.0" style="-fx-background-color: #5dccf5; -fx-background-radius: 100;" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="14.0">
+            <children>
+                <Text fill="#fcf8f8" layoutX="78.0" layoutY="24.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Apoinment Details" AnchorPane.leftAnchor="78.0" AnchorPane.topAnchor="7.98779296875">
+                    <font>
+                        <Font name="Bookman Old Style Bold" size="17.0" />
+                    </font>
+                </Text>
+                <ImageView fitHeight="25.0" fitWidth="28.0" layoutX="31.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="31.0" AnchorPane.topAnchor="7.0">
+                    <image>
+                        <Image url="@../sample/Images/apoinment2.png" />
+                    </image>
+                </ImageView>
+            </children>
+        </AnchorPane>
+        <TableView fx:id="tblApoinmentDetail" layoutX="13.0" layoutY="100.0" prefHeight="182.0" prefWidth="511.0" AnchorPane.bottomAnchor="52.0" AnchorPane.leftAnchor="7.0" AnchorPane.rightAnchor="6.0" AnchorPane.topAnchor="100.0">
+            <columns>
+            <TableColumn fx:id="colApoinmentiD" prefWidth="83.0" style="-fx-alignment: center;" text="ApoinmentId" />
+                <TableColumn fx:id="colPatId" prefWidth="83.0" style="-fx-alignment: center;" text="PatientId" />
+            <TableColumn fx:id="colPatientName" prefWidth="102.0" style="-fx-alignment: center;" text="PatientName" />
+                <TableColumn fx:id="colDocId" prefWidth="83.0" style="-fx-alignment: center;" text="DoctorId" />
+                <TableColumn fx:id="colNurseId" prefWidth="83.0" style="-fx-alignment: center;" text="NurseId" />
+                <TableColumn fx:id="colDate" prefWidth="88.0" style="-fx-alignment: center;" text="Date" />
+                <TableColumn fx:id="colTime" prefWidth="89.0" style="-fx-alignment: center;" text="Time" />
+                <TableColumn fx:id="colMedicine" prefWidth="289.0" style="-fx-alignment: center;" text="medicines" />
+            <TableColumn fx:id="colEq" prefWidth="251.0" style="-fx-alignment: center;" text="Equipment" />
+            <TableColumn fx:id="colDrink" prefWidth="290.0" style="-fx-alignment: center;" text="Drinks" />
+            <TableColumn fx:id="colCloth" prefWidth="83.0" style="-fx-alignment: center;" text="Cloths" />
+            <TableColumn fx:id="colRoom" prefWidth="104.0" style="-fx-alignment: center;" text="Room" />
+            <TableColumn fx:id="colLab" prefWidth="120.0" style="-fx-alignment: center;" text="Lab" />
+            <TableColumn fx:id="colParkingSlot" style="-fx-alignment: center;" text="Parking Slot" />
+            <TableColumn fx:id="colPrice" prefWidth="103.0" style="-fx-alignment: center;" text="Price" />
+            <TableColumn fx:id="colSuccess" prefWidth="78.0" style="-fx-alignment: center;" text="success" />
+            </columns>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </TableView>
+    </children>
+</AnchorPane>
