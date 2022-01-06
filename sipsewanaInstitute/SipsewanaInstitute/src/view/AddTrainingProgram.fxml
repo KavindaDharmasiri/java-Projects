@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" prefHeight="409.0" prefWidth="520.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AddTrainingProgramController">
+    <children>
+        <AnchorPane layoutX="7.0" prefHeight="82.0" prefWidth="520.0" style="-fx-background-color: #0598ff;" AnchorPane.leftAnchor="0.0">
+            <children>
+                <ImageView fitHeight="42.0" fitWidth="69.0" layoutX="32.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@assests/image/web-programming.png" />
+                    </image>
+                </ImageView>
+                <Label layoutX="113.0" layoutY="33.0" text="Programe Add" textFill="WHITE">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Label>
+            </children>
+        </AnchorPane>
+        <Label layoutX="92.0" layoutY="108.0" text="Program Name">
+            <font>
+                <Font size="13.0" />
+            </font>
+        </Label>
+        <TextField fx:id="txtName" layoutX="92.0" layoutY="134.0" onKeyPressed="#txtName" prefHeight="25.0" prefWidth="336.0" promptText="Program Name" />
+        <Label layoutX="92.0" layoutY="167.0" text="Duration (In Months)">
+            <font>
+                <Font size="13.0" />
+            </font>
+        </Label>
+        <TextField fx:id="txtDuration" layoutX="92.0" layoutY="193.0" onKeyPressed="#txtDuration" prefHeight="25.0" prefWidth="336.0" promptText="Ex:- 3" />
+        <Label layoutX="92.0" layoutY="228.0" text="Fee">
+            <font>
+                <Font size="13.0" />
+            </font>
+        </Label>
+        <TextField fx:id="txtFee" layoutX="92.0" layoutY="254.0" onKeyPressed="#txtFee" prefHeight="25.0" prefWidth="336.0" promptText="Fee" />
+        <Button fx:id="addBtn" layoutX="91.0" layoutY="312.0" mnemonicParsing="false" onAction="#AddOnAction" prefHeight="25.0" prefWidth="336.0" style="-fx-background-color: #0598ff;" text="Add" textFill="WHITE">
+            <font>
+                <Font size="13.0" />
+            </font>
+        </Button>
+        <Button layoutX="91.0" layoutY="352.0" mnemonicParsing="false" onAction="#closeOnAction" prefHeight="25.0" prefWidth="336.0" style="-fx-background-color: #0598ff;" text="Close" textFill="WHITE">
+            <font>
+                <Font size="13.0" />
+            </font>
+        </Button>
+      <Label fx:id="txtProgramId" layoutX="427.0" layoutY="91.0" prefHeight="25.0" prefWidth="75.0" text="Program Id" textFill="#0598ff">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Separator fx:id="sepName" layoutX="447.0" layoutY="139.0" prefHeight="19.0" prefWidth="42.0" />
+      <Separator fx:id="sepDuration" layoutX="447.0" layoutY="196.0" prefHeight="19.0" prefWidth="42.0" />
+      <Separator fx:id="sepFee" layoutX="447.0" layoutY="257.0" prefHeight="19.0" prefWidth="42.0" />
+    </children>
+</AnchorPane>

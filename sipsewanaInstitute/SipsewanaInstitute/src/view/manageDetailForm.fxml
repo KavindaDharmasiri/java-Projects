@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="350.0" prefWidth="700.0" style="-fx-background-color: white;" stylesheets="@assests/styles/manage-student-form.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ManageDetailFormController">
+    <children>
+        <Rectangle arcHeight="5.0" arcWidth="5.0" height="90.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="700.0">
+            <fill>
+                <LinearGradient endX="0.038553113553113555" endY="0.902014652014652" startX="0.0380952380952381" startY="0.24761904761904763">
+                    <stops>
+                        <Stop color="#0598ff" />
+                        <Stop color="WHITE" offset="1.0" />
+                    </stops>
+                </LinearGradient>
+            </fill></Rectangle>
+        <ImageView id="imgHome" fitHeight="53.0" fitWidth="55.0" layoutX="22.0" layoutY="16.0" onMouseClicked="#navigateToHome" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@assests/image/home-icon.png" />
+            </image>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </ImageView>
+        <Label layoutX="95.0" layoutY="24.0" text="Manage Training Programe Detail">
+            <font>
+                <Font name="Ubuntu" size="27.0" />
+            </font>
+        </Label>
+        <JFXButton id="btnAddNewCustomer" fx:id="btnAddNewDetail" buttonType="RAISED" layoutX="568.0" layoutY="35.0" onAction="#btnAddNew_OnAction" prefHeight="35.0" prefWidth="122.0" style="-fx-cursor: hand;" text="+ New Detail">
+            <ripplerFill>
+                <RadialGradient centerX="0.6166666666666667" centerY="0.5857142857142857" radius="0.5">
+                    <stops>
+                        <Stop color="#121314" />
+                        <Stop color="#2d77a8" offset="1.0" />
+                    </stops>
+                </RadialGradient>
+            </ripplerFill>
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font></JFXButton>
+        <TableView fx:id="tblDetail" layoutX="16.0" layoutY="166.0" prefHeight="175.0" prefWidth="668.0">
+            <columns>
+                <TableColumn fx:id="colStudentId" prefWidth="97.0" text="Student ID" />
+                <TableColumn fx:id="colProgramId" prefWidth="102.0" text="Program ID" />
+                <TableColumn fx:id="colGivenMoney" minWidth="0.0" prefWidth="127.0" text="Given Money" />
+                <TableColumn fx:id="colOnGoingPayment" minWidth="0.0" prefWidth="123.0" text="On Going Payment" />
+                <TableColumn fx:id="colTimeLeft" minWidth="0.0" prefWidth="114.0" text="End Date" />
+            <TableColumn fx:id="colEdit" minWidth="0.0" prefWidth="104.0" text="Edit" />
+            </columns>
+        </TableView>
+      <Label fx:id="txtDate" layoutX="566.0" layoutY="94.0" prefHeight="17.0" prefWidth="91.0" text="Date" />
+    </children>
+</AnchorPane>

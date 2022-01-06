@@ -1,0 +1,43 @@
+<html><head>
+  <SCRIPT src="http://java.com/js/dtjava.js"></SCRIPT>
+<script>
+    function launchApplication(jnlpfile) {
+        dtjava.launch(            {
+                url : 'GDSE58_ITS1155_KavindaGimhanDharmasiri.jnlp'
+            },
+            {
+                javafx : '8.0+'
+            },
+            {}
+        );
+        return false;
+    }
+</script>
+
+<script>
+    function javafxEmbedGDSE58_ITS1155_KavindaGimhanDharmasiri_id() {
+        dtjava.embed(
+            {
+                id : 'GDSE58_ITS1155_KavindaGimhanDharmasiri_id',
+                url : 'GDSE58_ITS1155_KavindaGimhanDharmasiri.jnlp',
+                placeholder : 'javafx-app-placeholder',
+                width : '600',
+                height : '400'
+            },
+            {
+                javafx : '8.0+'
+            },
+            {}
+        );
+    }
+    <!-- Embed FX application into web page once page is loaded -->
+    dtjava.addOnloadCallback(javafxEmbedGDSE58_ITS1155_KavindaGimhanDharmasiri_id);
+</script>
+
+</head><body>
+<h2>Test page for <b>GDSE58_ITS1155_KavindaGimhanDharmasiri</b></h2>
+  <b>Webstart:</b> <a href='GDSE58_ITS1155_KavindaGimhanDharmasiri.jnlp' onclick="return launchApplication('GDSE58_ITS1155_KavindaGimhanDharmasiri.jnlp');">click to launch this app as webstart</a><br><hr><br>
+
+  <!-- Applet will be inserted here -->
+  <div id='javafx-app-placeholder'></div>
+</body></html>

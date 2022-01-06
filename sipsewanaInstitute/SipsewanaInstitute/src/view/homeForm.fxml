@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="root2" prefHeight="350.0" prefWidth="700.0" style="-fx-background-color: white; -fx-border-radius: 20px;" styleClass="mainFxmlClass" stylesheets="@assests/styles/main-form.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.HomeFormController">
+    <children>
+          <Label fx:id="lblMenu" alignment="CENTER" layoutX="62.0" layoutY="225.0" prefHeight="26.0" prefWidth="577.0" text="Welcome To Sipsewana" textAlignment="CENTER" textFill="#0a39f7">
+              <font>
+                  <Font name="DejaVu Sans Mono Bold" size="22.0" />
+              </font>
+          </Label>
+          <Label fx:id="lblDescription" alignment="CENTER" layoutX="62.0" layoutY="274.0" prefHeight="16.0" prefWidth="577.0" text="Please select one of above main operations to proceed">
+              <font>
+                  <Font name="Ubuntu" size="12.0" />
+              </font>
+          </Label>
+          <Label alignment="CENTER" layoutX="62.0" layoutY="311.0" prefHeight="16.0" prefWidth="577.0" text="Copyright 2021 SIPSEWANA. All Rights Reserved.">
+              <font>
+                  <Font size="10.0" />
+              </font>
+          </Label>
+          <ImageView fx:id="imgStudent" fitHeight="103.0" fitWidth="116.0" layoutX="81.0" layoutY="72.0" onMouseClicked="#navigate" onMouseEntered="#playMouseEnterAnimation" onMouseExited="#playMouseExitAnimation" pickOnBounds="true" preserveRatio="true" AnchorPane.topAnchor="92.0">
+              <image>
+                  <Image url="@assests/image/customers.png" />
+              </image>
+          </ImageView>
+          <ImageView fx:id="imgprograme" fitHeight="103.0" fitWidth="115.0" layoutX="299.0" layoutY="72.0" onMouseClicked="#navigate" onMouseEntered="#playMouseEnterAnimation" onMouseExited="#playMouseExitAnimation" pickOnBounds="true" preserveRatio="true" AnchorPane.topAnchor="92.0">
+              <image>
+                  <Image url="@assests/image/items.png" />
+              </image>
+          </ImageView>
+          <ImageView fx:id="imgdetail" fitHeight="103.0" fitWidth="116.0" layoutX="511.0" layoutY="72.0" onMouseClicked="#navigate" onMouseEntered="#playMouseEnterAnimation" onMouseExited="#playMouseExitAnimation" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="99.0" AnchorPane.topAnchor="92.0">
+              <image>
+                  <Image url="@assests/image/orders.png" />
+              </image>
+          </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="90.0" layoutX="4.0" layoutY="9.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="700.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <fill>
+            <LinearGradient endX="0.038553113553113555" endY="0.902014652014652" startX="0.0380952380952381" startY="0.24761904761904763">
+               <stops>
+                  <Stop color="#0598ff" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+    </children>
+</AnchorPane>

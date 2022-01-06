@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="root" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LoginPageController">
+   <children>
+      <BorderPane fx:id="loginPage" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0">
+         <left>
+            <AnchorPane prefHeight="500.0" prefWidth="350.0" style="-fx-background-color: #0598ff;" BorderPane.alignment="CENTER">
+               <children>
+                  <FontAwesomeIconView fill="WHITE" glyphName="BOOK" layoutX="140.0" layoutY="211.0" size="75" />
+                  <Text fill="WHITE" layoutX="90.0" layoutY="258.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sipsewana Institute">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Text>
+               </children>
+            </AnchorPane>
+         </left>
+         <right>
+            <AnchorPane prefHeight="500.0" prefWidth="415.0" style="-fx-background-color: white;" BorderPane.alignment="CENTER">
+               <children>
+                  <TextField fx:id="txtUserName" layoutX="125.0" layoutY="201.0" onKeyPressed="#txtUserName" promptText="User Name" style="-fx-background-color: transparent; -fx-border-color: #0598ff; -fx-border-width: 0px 0px 2px 0px;" />
+                  <PasswordField fx:id="txtHidePaswword" layoutX="125.0" layoutY="254.0" onKeyReleased="#txtHidePassword" promptText="Password" style="-fx-background-color: transparent; -fx-border-color: #0598ff; -fx-border-width: 0px 0px 2px 0px;" />
+                  <FontAwesomeIconView fill="#0598ff" glyphName="USER" layoutX="90.0" layoutY="225.0" size="20" />
+                  <FontAwesomeIconView fill="#0598ff" glyphName="KEY" layoutX="90.0" layoutY="279.0" size="20" />
+                  <Button fx:id="log" layoutX="149.0" layoutY="314.0" mnemonicParsing="false" onAction="#Login" prefHeight="36.0" prefWidth="83.0" style="-fx-background-color: #0598ff;" text="Login" textFill="WHITE" />
+                  <Hyperlink layoutX="194.0" layoutY="447.0" onAction="#ForgotPassword" text="Forgot Your Password ?" />
+                  <FontAwesomeIconView fill="#0598ff" glyphName="USERS" layoutX="172.0" layoutY="116.0" size="35" />
+                  <Text fill="#0598ff" layoutX="139.0" layoutY="153.0" strokeType="OUTSIDE" strokeWidth="0.0" text="User Login">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                  </Text>
+                  <Button layoutX="316.0" layoutY="2.0" mnemonicParsing="false" onMouseReleased="#exit" style="-fx-background-color: transparent;">
+                     <graphic>
+                        <FontAwesomeIconView fill="#0598ff" glyphName="CLOSE" onMouseReleased="#exit" size="15.0" />
+                     </graphic>
+                  </Button>
+                  <Hyperlink layoutX="34.0" layoutY="447.0" onAction="#createAccount" text="Create New Account" />
+                  <Text fill="#0598ff" layoutX="170.0" layoutY="464.0" strokeType="OUTSIDE" strokeWidth="0.0" text="|">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Text>
+                  <FontAwesomeIconView fx:id="openeye" fill="#0598ff" glyphName="EYE" layoutX="288.0" layoutY="272.0" onMouseReleased="#openEye" />
+                  <TextField fx:id="txtShowPassword" layoutX="125.0" layoutY="255.0" onKeyReleased="#txtShowPassword" promptText="Password" style="-fx-background-color: transparent; -fx-border-width: 0px 0px 2px 0px; -fx-border-color: #0598ff;" />
+                  <ImageView fx:id="closeeye" fitHeight="14.0" fitWidth="16.0" layoutX="287.0" layoutY="262.0" onMouseReleased="#closeEye" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@assests/image/icons8-closed-eye-30.png" />
+                     </image>
+                  </ImageView>
+                  <Separator fx:id="sepPass" layoutX="91.0" layoutY="297.0" prefWidth="200.0" />
+                  <Separator fx:id="sepName" layoutX="87.0" layoutY="239.0" prefWidth="200.0" />
+               </children>
+            </AnchorPane>
+         </right>
+      </BorderPane>
+   </children>
+</AnchorPane>
